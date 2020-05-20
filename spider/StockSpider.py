@@ -8,11 +8,11 @@ import csv
 
 # 读取股票代码
 data = pd.DataFrame(pd.read_excel('2020-05-20.xlsx',encoding='utf-8'))
-# print(data['股票代码'])#获取列名为姓名这一列的内容
+# print(data['股票代码'])#获取列名为股票代码这一列的内容
 
 # 构造headers
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36',
-'Cookie':'Cookie: device_id=24700f9f1986800ab4fcc880530dd0ed; s=bx17l9zje4; remember=1; xq_a_token=c6bb829c4c888f0ec74e8e7df277988dc13bd996; xq_id_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1aWQiOjM5MTY4MjM3NjMsImlzcyI6InVjIiwiZXhwIjoxNTkyNTcxODYxLCJjdG0iOjE1ODk5Nzk4NjE2NzEsImNpZCI6ImQ5ZDBuNEFadXAifQ.KydCcsioS634tyZiy-Nc305w5wdVPDxOM9dWnYhsq2Zi6-3iH2D_vG1tRF5qPB63FL-F1-ASa1KwOtG81jdj0yrOgnp1ftvU_AqwNQk9alCWkEAKkrJMXwEP5s-WsGw00gI0i4i716Fa5XfSCFoDxT06zgQY9O3fOl-0mMTaxp5n2SJQE_g_8qwuUMo73QP9eWlm3ZzmkRboUkJjisNlFcN47s_62XinrIwDGsKLIQWVkT5Pp1Kded27bRBndmvi4iHJpybaGs1yt057pvIDO2_jUBsDO-TX4d6thKl0OCgtL2ZBkis4Z2jw7cYExUDRuEEz87uOlt6sA_p7NBpjRQ; xqat=c6bb829c4c888f0ec74e8e7df277988dc13bd996; xq_r_token=95ae60340e95370663bf8309c4275add3e0529e3; xq_is_login=1; u=3916823763; is_overseas=0'}
+'Cookie':'@此处填写你自己的cookie'}
 
 # 新建CSV并写入表头
 f = open('雪球网股票信息.csv', 'w', encoding='utf-8-sig', newline='')
